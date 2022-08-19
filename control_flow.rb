@@ -47,10 +47,14 @@ end
 def calculator(operation, num1, num2)
 
   # your code here
-  if operation == '+' || operation == "-" || operation == "*" || operation == "/"
-    puts operation, num1, num2;
-
-    num1 operation num2;
+  if operation == '+'
+    num1 + num2;
+  elsif operation == "-" 
+    num1 - num2;
+  elsif operation == "*" 
+    num1 * num2;
+  elsif operation == "/"
+    num1 / num2;    
   else
     puts "Invalid operation!"
     return nil
@@ -58,7 +62,6 @@ def calculator(operation, num1, num2)
 
 end
 
-calculator("+", 2, 4 );
 
 
 
